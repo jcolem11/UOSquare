@@ -12,6 +12,14 @@
 		EB368DBE1DCFEBE50031B1BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB368DBC1DCFEBE50031B1BA /* Main.storyboard */; };
 		EB368DC01DCFEBE50031B1BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB368DBF1DCFEBE50031B1BA /* Assets.xcassets */; };
 		EB368DC31DCFEBE50031B1BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB368DC11DCFEBE50031B1BA /* LaunchScreen.storyboard */; };
+		EB368DCB1DCFF5710031B1BA /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DCA1DCFF5710031B1BA /* APIManager.swift */; };
+		EB368DCF1DD00A8D0031B1BA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DCE1DD00A8D0031B1BA /* SwiftyJSON.swift */; };
+		EB368DD11DD035C10031B1BA /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DD01DD035C10031B1BA /* VenueTableViewCell.swift */; };
+		EB368DD41DD040870031B1BA /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DD21DD040870031B1BA /* VenueDetailViewController.swift */; };
+		EB368DD51DD040870031B1BA /* VenueDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB368DD31DD040870031B1BA /* VenueDetailViewController.xib */; };
+		EB368DD71DD040A40031B1BA /* VenueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DD61DD040A40031B1BA /* VenueDetailView.swift */; };
+		EB368DDC1DD050F00031B1BA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DDB1DD050F00031B1BA /* Extensions.swift */; };
+		EB368DE01DD15D8C0031B1BA /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB368DDF1DD15D8C0031B1BA /* Venue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		EB368DBF1DCFEBE50031B1BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB368DC21DCFEBE50031B1BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB368DC41DCFEBE50031B1BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB368DCA1DCFF5710031B1BA /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EB368DCE1DD00A8D0031B1BA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		EB368DD01DD035C10031B1BA /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		EB368DD21DD040870031B1BA /* VenueDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+		EB368DD31DD040870031B1BA /* VenueDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueDetailViewController.xib; sourceTree = "<group>"; };
+		EB368DD61DD040A40031B1BA /* VenueDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueDetailView.swift; sourceTree = "<group>"; };
+		EB368DDB1DD050F00031B1BA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EB368DDF1DD15D8C0031B1BA /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = ../Venue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +71,45 @@
 			isa = PBXGroup;
 			children = (
 				EB368DB81DCFEBE50031B1BA /* AppDelegate.swift */,
-				EB368DBA1DCFEBE50031B1BA /* ViewController.swift */,
-				EB368DBC1DCFEBE50031B1BA /* Main.storyboard */,
+				EB368DCA1DCFF5710031B1BA /* APIManager.swift */,
+				EB368DDF1DD15D8C0031B1BA /* Venue.swift */,
+				EB368DDB1DD050F00031B1BA /* Extensions.swift */,
+				EB368DDA1DD040D00031B1BA /* 3rd Party */,
+				EB368DD91DD040C40031B1BA /* Main View */,
+				EB368DD81DD040AD0031B1BA /* Venue Detail */,
 				EB368DBF1DCFEBE50031B1BA /* Assets.xcassets */,
 				EB368DC11DCFEBE50031B1BA /* LaunchScreen.storyboard */,
 				EB368DC41DCFEBE50031B1BA /* Info.plist */,
 			);
 			path = UOSquare;
+			sourceTree = "<group>";
+		};
+		EB368DD81DD040AD0031B1BA /* Venue Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EB368DD21DD040870031B1BA /* VenueDetailViewController.swift */,
+				EB368DD31DD040870031B1BA /* VenueDetailViewController.xib */,
+				EB368DD61DD040A40031B1BA /* VenueDetailView.swift */,
+			);
+			name = "Venue Detail";
+			sourceTree = "<group>";
+		};
+		EB368DD91DD040C40031B1BA /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				EB368DBC1DCFEBE50031B1BA /* Main.storyboard */,
+				EB368DBA1DCFEBE50031B1BA /* ViewController.swift */,
+				EB368DD01DD035C10031B1BA /* VenueTableViewCell.swift */,
+			);
+			name = "Main View";
+			sourceTree = "<group>";
+		};
+		EB368DDA1DD040D00031B1BA /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				EB368DCE1DD00A8D0031B1BA /* SwiftyJSON.swift */,
+			);
+			name = "3rd Party";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +175,7 @@
 				EB368DC31DCFEBE50031B1BA /* LaunchScreen.storyboard in Resources */,
 				EB368DC01DCFEBE50031B1BA /* Assets.xcassets in Resources */,
 				EB368DBE1DCFEBE50031B1BA /* Main.storyboard in Resources */,
+				EB368DD51DD040870031B1BA /* VenueDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +186,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB368DD71DD040A40031B1BA /* VenueDetailView.swift in Sources */,
+				EB368DCB1DCFF5710031B1BA /* APIManager.swift in Sources */,
 				EB368DBB1DCFEBE50031B1BA /* ViewController.swift in Sources */,
+				EB368DE01DD15D8C0031B1BA /* Venue.swift in Sources */,
+				EB368DDC1DD050F00031B1BA /* Extensions.swift in Sources */,
 				EB368DB91DCFEBE50031B1BA /* AppDelegate.swift in Sources */,
+				EB368DD41DD040870031B1BA /* VenueDetailViewController.swift in Sources */,
+				EB368DD11DD035C10031B1BA /* VenueTableViewCell.swift in Sources */,
+				EB368DCF1DD00A8D0031B1BA /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +317,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P77NVT7PU9;
 				INFOPLIST_FILE = UOSquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jc.UOSquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P77NVT7PU9;
 				INFOPLIST_FILE = UOSquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jc.UOSquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
